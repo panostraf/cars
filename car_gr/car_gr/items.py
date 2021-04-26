@@ -41,29 +41,5 @@ class CarGrItem(scrapy.Item):
     interior_type = scrapy.Field()
     wheels_size = scrapy.Field()
 
-
-# {'Μάρκα-μοντέλο':'maker',
-# 'Νούμεροαγγελίας':'model_numer',
-# 'Κατάσταση':'condition',
-# 'Τιμή':'price',
-# 'Κατηγορία':'category',
-# 'Χρονολογία':'registration',
-# 'Χιλιόμετρα':'mileage',
-# 'Καύσιμο':'fuel_type',
-# 'Κυβικά':'cc'
-# 'Ίπποι':'hp',
-# 'Σασμάν':'transmission',
-# 'Χρώμα':'color',
-# 'Χρώμαεσωτερικού':'interior_color',
-# 'Επένδυσησαλονιού':'interior_type',
-# 'Μέγεθοςζάντας':'wheels_size',
-# 'Πινακίδα':'number_plate',
-# 'Κίνηση':'drive_type',
-# 'Αερόσακοι':'airbags',
-# 'Πόρτες':'doors',
-# 'Καθίσματα':'seats',
-# 'Τελευταίααλλαγή':'modified',
-# 'Εμφανίσειςαγγελίας':'views',
-# 'Σύνδεσμος':'link',
-# 'Τηλέφωνο':'phone'}
-
+class CarLinks(scrapy.Item):
+    link = scrapy.Field()
